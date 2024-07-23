@@ -4,7 +4,11 @@ SELECT Customer.CustomerID,
   COUNT(1) as NUM_ORDERS
 FROM Customer
   JOIN Orders ON Customer.CustomerID = Orders.CustomerID
+
 GROUP BY Customer.CustomerID,
   Customer.FirstName,
   Customer.LastName
+
+Having NUM_ORDERS like 1
+
 ORDER BY NUM_ORDERS DESC

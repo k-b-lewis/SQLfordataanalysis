@@ -16,3 +16,5 @@ VALUES (
     '0.00',
     'ACTIVE'
   );
+
+  select * from Product

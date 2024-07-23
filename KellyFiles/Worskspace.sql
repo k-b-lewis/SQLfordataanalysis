@@ -1,0 +1,1 @@
+Select NOW() as Right_Now
